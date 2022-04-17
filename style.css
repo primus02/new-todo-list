@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    color: #fff;
+    max-height: 100vh;
+}
+.home{
+    text-align: center;
+}
+.home h1, .tasks h2{
+    font-family: "Poppins:wght@600", sans-serif;
+}
+.home p, .click-header p, input, textarea{
+    font-family: "Poppins:wght@400", sans-serif;
+}
+.home img{
+    width: 100%;
+    height: 450px;
+}
+.get-started{
+    margin-top: 70px;
+}
+.home p{
+    margin-top: 20px;
+}
+.get-started img{
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+}
+.click-header{
+    margin-top: 50px;
+    text-align: center;
+}
+.click-header h1, .create-task h1, .created-date, .tasks h1{
+    font-family: "Poppins:wght@500", sans-serif;
+}
+.click-btn{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.add-btn, .add-item-btn, .task-add-btn, .fa{
+    cursor: pointer;
+}
+.create-task, .tasks{
+    padding: 20px;
+    padding-top: 40px;
+}
+.icon{
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 30px;
+}
+.create-task h1, .tasks h1{
+    margin-bottom: 30px;
+}
+.create-task input, textarea, select{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 22px;
+}
+.add-item{
+    margin-top: 20px;
+}
+.add-item img{
+    width: 100%;
+    height: 50px;
+}
+textarea{
+    height: 150px;
+}
+.task{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(26, 24, 24);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.task h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.due-date{
+    background-color: rgba(15, 196, 15, 0.11);
+    padding: 5px;
+    width: 110px;
+    text-align: center;
+    font-size: 12px;
+    color: green;
+    font-weight: bolder;
+}
+.status{
+    padding: 5px;
+    width: 110px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bolder;
+    float: right;
+}
+.task-btn{
+    margin-top: 30px;
+    text-align: right;
+    padding-right: 20px;
+}
+.d-none{
+    display: none;
+}
+.in-progress{
+    background-color: rgba(255, 255, 0, 0.096);
+    color: rgb(155, 155, 22);
+}
+.done{
+    background-color: rgba(15, 196, 15, 0.11);
+    color: green;
+}
+.due{
+    background-color: rgba(255, 0, 0, 0.219);
+    color: red;
+}

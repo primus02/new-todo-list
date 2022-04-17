@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Todo-List App</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    </head>
+    <body>
+         <div class="container create-task">
+            <h1>Create task</h1>
+
+            <form>
+                <p><input type="text" class="title-field" placeholder="Title" required/></p>
+                <p><textarea type="text" class="description-field" placeholder="Description" rows="4" required></textarea></p>
+                <p><input type="date" class="date-field" placeholder="Due date" required/></p>
+                <p>
+                   <select class="status-field" required>
+                       <option value="">Status</option>
+                       <option value="In-Progress">In-progress</option>
+                       <option value="Due">Due</option>
+                       <option value="Done">Done</option>
+                   </select>
+                </p>
+
+                <p class="add-item"><img src="images/add-item.svg" alt="add-item" class="add-item-btn"/></p>
+            </form>
+         </div>
+
+         <div class="container tasks d-none">
+             <p class="icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></p>
+            <h1>Your tasks</h1>
+           
+                <div class="tasks-container">
+                    <div class="task">
+                        <p class="due-date">Due on April 22nd</p>
+                        <h2>My UI Design Assignment</h2>
+                        <p class="created-date">Tuesday April 1 2022</p>
+                        <p class="status in-progress">In-Progress</p>
+                    </div>
+                    <div class="task">
+                        <p class="due-date">Due on April 21st</p>
+                        <h2>Go to the Gym</h2>
+                        <p class="created-date">Tuesday April 3 2022</p>
+                        <p class="status done">Done</p>
+                    </div>
+                    <div class="task">
+                        <p class="due-date">Due on April 23rd</p>
+                        <h2>Read a Book</h2>
+                        <p class="created-date">Tuesday April 2 2022</p>
+                        <p class="status due">Due</p>
+                    </div>
+                    <div class="task">
+                        <p class="due-date">Due on April 24th</p>
+                        <h2>Visit Grandparents</h2>
+                        <p class="created-date">Tuesday April 4 2022</p>
+                        <p class="status in-progress">In-Progress</p>
+                    </div>
+                
+            </div>
+
+            <div class="task-btn"><img src="images/add-button.svg" alt="add-button" class="task-add-btn"/></div>
+         </div>
+
+         <script src="script.js"></script>
+    </body>
+</html>
